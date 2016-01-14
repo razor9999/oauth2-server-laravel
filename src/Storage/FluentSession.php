@@ -12,6 +12,7 @@
 namespace LucaDegasperi\OAuth2Server\Storage;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Session;
 use League\OAuth2\Server\Entity\AccessTokenEntity;
 use League\OAuth2\Server\Entity\AuthCodeEntity;
 use League\OAuth2\Server\Entity\ScopeEntity;
@@ -115,6 +116,7 @@ class FluentSession extends AbstractFluentAdapter implements SessionInterface
             'client_id' => $clientId,
             'owner_type' => $ownerType,
             'owner_id' => $ownerId,
+            'session_key' => Session::getId(),
             'client_redirect_uri' => $clientRedirectUri,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
