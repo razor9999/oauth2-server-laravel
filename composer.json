@@ -1,16 +1,12 @@
 {
-    "name": "lucadegasperi/oauth2-server-laravel",
+    "name": "vunguyen/oauth2-server-laravel",
     "description": "An OAuth 2.0 bridge for Laravel and Lumen",
     "keywords": ["oauth2", "oauth", "server", "api", "laravel", "lumen"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Luca Degasperi",
-            "email": "packages@lucadegasperi.com"
-        },
-        {
-            "name": "Vincent Klaiber",
-            "email": "hello@vinkla.com"
+            "name": "Vu Nguyen",
+            "email": "hoangvu.php@gmail.com"
         }
     ],
     "require": {
