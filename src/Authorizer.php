@@ -306,4 +306,17 @@ class Authorizer
         $this->issuer->setTokenType($tokenType);
         $this->checker->setTokenType($tokenType);
     }
+
+
+
+    /**
+     * Get the session ID of the current request.
+     *
+     * @return string
+     */
+    public function getSession()
+    {
+        return $this->getAccessToken()->getSession()->getId();
+    }
+
 }
